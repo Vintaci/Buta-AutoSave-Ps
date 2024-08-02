@@ -1,0 +1,35 @@
+body {
+    color: white;
+    padding: 0 16px;
+  }
+  li:before {
+    content: '• ';
+    width: 3em;
+  }
+
+  #savePath, #fileName {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 10px 0;
+  }
+
+  input, select, button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+  #changePathBtn + #btnStart {
+    margin-left: 20px;  /* 调整 20px 为您想要的间距大小 */
+  }
+
+  .fixed-bar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px 0 0 0; /* 只有左上角有圆角 */
+    box-shadow: -2px -2px 5px rgba(0,0,0,0.1);
+}

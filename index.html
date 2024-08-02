@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="main.js"></script> 
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+  <sp-heading>保存路径</sp-heading>
+  <sp-body>
+    <input id="savePath" placeholder="保存路径" readonly>
+    <input id="fileName" placeholder="当前文件" readonly>
+    <br>
+    <label for="intervalSelect">保存间隔：</label>
+    <select id="intervalSelect">
+      <option value="300">5 分钟</option>
+      <option value="600" >10 分钟</option>
+      <option value="900" selected>15 分钟</option>
+      <option value="1800">30 分钟</option>
+      <option value="3600">1 小时</option>
+  </select>
+  </sp-body>
+  <footer>
+    <sp-button id="changePathBtn">更改路径</sp-button>
+    <sp-button id="btnStart">开始</sp-button>
+    <div class="fixed-bar">
+      Version: 0.0.4 | Created by: Buta
+  </div>
+  </footer>
+</body>
+</html>
